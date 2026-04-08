@@ -1,0 +1,56 @@
+global style*/
+ * {
+   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+
+section {
+  padding: 60px 0;
+} 
+ 
+ 
+ .dark {
+  background-color: #534c4c ;
+  color: #fff ;
+}
+
+.dark .card {
+  background: #1e1e1e;
+} 
+
+.hero {
+  height: 90vh;
+  background: url('https://alsahwa.om/wp-content/uploads/2021/03/%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89-%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A-730x375.jpg') center/cover;
+  position: relative;
+} 
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+.dark {
+  background-color: #534c4c ;
+  color: #fff ;
+}
+
+.dark .card {
+  background: #1e1e1e;
+} 

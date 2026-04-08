@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediBook</title>
+  <!--icons css file-->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!---bootstrap css file-->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!---main css main-->
+  <link rel="stylesheet" href="./css/style.css">
+  <!--Darkmood css-->
+  <link rel="stylesheet" href="./CSS/DARKmood.css">
+</head>
+
+
+<body>
+
+  
+
+  <!--Home Page-->
+
+
+  Navbar
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🩺 MediBook</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <button id="darkToggle" class="btn btn-sm btn-dark ms-3">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!--end nav-->
+
+
+
+  <!-- Hero -->
+  <section class="hero text-white text-center d-flex align-items-center">
+    <div class="container">
+      <h1>Your Health, Our Priority</h1>
+      <p>Book appointments with trusted doctors</p>
+      <a href="doctors.html" class="btn btn-primary">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+      <script>
+        const services = ["General Medicine", "Cardiology", "Dermatology", "Pediatrics", "Orthopedics", "Dentistry"];
+        document.write(services.map(s => `
+              <div class="col-md-4">
+        <div class="card p-3 text-center">
+       <h5>${s}</h5>
+         <p>⭐Quality ${s} services.</p>
+                 </div>
+               </div>
+             `).join(''));
+      </script>
+
+    </div>
+
+  </section>
+
+  <!-- Doctors -->
+
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Featured Doctors</h2>
+    <div class="row" id="doctorContainer"></div>
+  </section>
+
+
+  <!-- Stats -->
+  <section class=" py-5 text-center">
+    <div class="container row mx-auto">
+      <div class="col">
+        <h3 id="docCount">0</h3>
+        <p>Doctors</p>
+      </div>
+      <div class="col">
+        <h3 id="patCount">0</h3>
+        <p>Patients</p>
+      </div>
+      <div class="col">
+        <h3 id="specCount">0</h3>
+        <p>Specialties</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+
+  <footer class="bg-dark text-white text-center p-4">
+    <p>📍 Muscat | 📞 +968 00000000 | ✉ info@medibook.com</p>
+    <p>Working Hours: 9AM - 6PM</p>
+  </footer>
+
+
+
+
+  
+
+
+
+
+
+
+
+  <script src="./js/main.js"></script>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

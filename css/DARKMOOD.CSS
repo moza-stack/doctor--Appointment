@@ -1,0 +1,118 @@
+/* darkmood */
+
+
+:root {
+    --identity-color:black;
+    --primary-color:white;
+    --foot-color:gray;
+    --hoot-color:rgb(158, 107, 13);
+    
+ 
+
+}
+
+.moon {
+    display: inline-block;
+}
+
+.sun {
+    display: none;
+}
+
+#toggle-btn:checked ~.icons .moon {
+    display: none;
+}
+
+#toggle-btn:checked ~.icons .sun {
+    display: inline-block;
+}
+
+
+:has(#toggle-btn:checked) button  {
+    background-color: var(--hoot-color);
+    border: 2px solid var(--hoot-color);
+}
+
+
+
+ body:has(#toggle-btn:checked) .chefs ,
+body:has(#toggle-btn:checked) .contact,
+body:has(#toggle-btn:checked) .navbar {
+   background-color: var(--identity-color) !important;
+
+}
+
+
+
+body:has(#toggle-btn:checked) .contact span,
+body:has(#toggle-btn:checked)  .navbar-brand::after,
+body:has(#toggle-btn:checked) .chefs h2 span{
+    color:var(--hoot-color);
+}
+
+
+body:has(#toggle-btn:checked) .navbar-brand, .chef-info{
+
+   color:var(--primary-color);
+}
+
+
+body:has(#toggle-btn:checked) .contact h4{
+    color:var(--primary-color);
+}
+
+body:has(#toggle-btn:checked) .enve{
+
+    background-color: var(--hoot-color);
+}
+
+body:has(#toggle-btn:checked) .navbar-nav .nav-link{
+    color: var(--primary-color) ;
+}
+
+body:has(#toggle-btn:checked) .moon , .sun{
+    color: var(--primary-color) ;
+}
+body:has(#toggle-btn:checked) .contact h2{
+    color: var(--primary-color) ;
+}
+body:has(#toggle-btn:checked) .contact h4, .chefs h3{
+    color:var(--foot-color);
+}
+body:has(#toggle-btn:checked) .chefs h2{
+
+ color: var(--primary-color);
+}
+body:has(#toggle-btn:checked) .chef-card{
+    background-color: rgb(53, 51, 51);
+}
+body:has(#toggle-btn:checked) .chef-card p{
+    color:var(--foot-color);
+}
+
+body:has(#toggle-btn:checked) .chef-info h3{
+     color: var(--primary-color);
+}
+
+body:has(#toggle-btn:checked) .info h3{
+   color:var(--foot-color);  
+}
+body:has(#toggle-btn:checked) .info p{
+      color: var(--primary-color);
+}
+
+
+body:has(#toggle-btn:checked) .nav-link::after {
+      background-color: var(--hoot-color);
+}
+
+body:has(#toggle-btn:checked) .box{
+
+    background-color: var(--identity-color);
+}
+
+
+
+
+
+
